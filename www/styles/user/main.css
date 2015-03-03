@@ -1,0 +1,70 @@
+.u-left{
+	float:left;
+	width: 15%;
+}
+
+.u-right{
+	float: right;
+	width: 75%;
+}
+
+.u-label{
+	font-size: 18px;
+	height: 34px;
+}
+
+.u-field{
+	height: 40px;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+
+.u-critera{
+	margin-bottom: 20px;
+}
+
+.u-header{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.u-criteria-table{
+	width: 80%;	
+	margin-left:10%;
+}
+
+.u-criteria-table .u-connector{
+	width: 10%;
+}
+
+.u-criteria-table .u-query-field{
+	width: 30%;
+}
+
+.u-criteria-table .u-operator{
+	width: 20%;
+}
+
+.u-criteria-table .u-query-value{
+	width: 35%;
+}
+
+.u-criteria-table .u-remove-criteria{
+	width: 5%;
+}
+
+.u-criteria-table td{
+	padding-top: 10px;
+	paddint-bottom: 10px;
+	padding-left: 10px;
+	paddint-right: 10px;
+}
+
+.btn-group, .dropdown-toggle, .input-group{
+	width:100%;
+}
+
+.dropdown-menu {
+    width: 100%;
+    text-align: center;
+}

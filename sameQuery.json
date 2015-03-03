@@ -1,0 +1,16 @@
+{
+	"MasterTableName": "",
+	"StartDate" : "",
+	"EndDate" : "",
+	"Roles" : [
+		""
+	],
+	"Query": [
+		{
+			"Field" : "",
+			"Operator" : "",
+			"Value" : "",
+			"Connector" : ""
+		}
+	]
+}

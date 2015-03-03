@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<% include partials/styles %>
+		<% include partials/scripts %>
+	</head>
+	<body>
+		<div class="container" ng-app="queryBuilder">
+			<% include partials/jumbotron %>
+			
+			<div class="u-critera">
+				<% include partials/criteria/select-table %>
+				<% include partials/criteria/select-date %>
+				<% include partials/criteria/select-roles %>	
+			</div>
+	
+			<div class="u-critera">
+				<div class="u-label u-header">Query</div>
+				<% include partials/criteria/build-query %>
+				
+				<div style="width:100px" ng-controller="dropdowntest">
+					<dropdown
+						options = "fruits"
+						selected = "king">
+					</dropdown>
+				</div>				
+			</div>						
+		</div>
+	</body>
+</html>

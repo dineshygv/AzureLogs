@@ -1,0 +1,11 @@
+<div class="dropdown">
+	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+		{{name}}
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		<li  ng-repeat="option in options">
+			<a>{{option.text}}</a>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,96 @@
+{
+ "DisplayAppsDefaultEventVer": {
+  "tables": [
+   "DisplayAppsDefaultEventVerAccountLookUpServiceHost",
+   "DisplayAppsDefaultEventVerAudiencesWeb",
+   "DisplayAppsDefaultEventVerAuthWebApi",
+   "DisplayAppsDefaultEventVerAuthWorker",
+   "DisplayAppsDefaultEventVerCAMCreativeApiWebApi",
+   "DisplayAppsDefaultEventVerCampaignServicesWeb",
+   "DisplayAppsDefaultEventVerCampaignWeb",
+   "DisplayAppsDefaultEventVerCreativeAssignmentWeb",
+   "DisplayAppsDefaultEventVerDashboardDataServicePrefetcher",
+   "DisplayAppsDefaultEventVerDashboardDataServiceWeb",
+   "DisplayAppsDefaultEventVerExposureService",
+   "DisplayAppsDefaultEventVerInsightsExport",
+   "DisplayAppsDefaultEventVerInsightsServiceWebApi",
+   "DisplayAppsDefaultEventVerInsightsWeb",
+   "DisplayAppsDefaultEventVerK2",
+   "DisplayAppsDefaultEventVerK2SQL",
+   "DisplayAppsDefaultEventVerMediators",
+   "DisplayAppsDefaultEventVerNotificationServiceWeb",
+   "DisplayAppsDefaultEventVerNotificationServiceWorker",
+   "DisplayAppsDefaultEventVerPerformanceWeb",
+   "DisplayAppsDefaultEventVerProductCatalogServiceWeb",
+   "DisplayAppsDefaultEventVerProductsWeb",
+   "DisplayAppsDefaultEventVerReferenceDataWeb",
+   "DisplayAppsDefaultEventVerRootWeb",
+   "DisplayAppsDefaultEventVerSegmentBpsWebApi",
+   "DisplayAppsDefaultEventVerSharepoint",
+   "DisplayAppsDefaultEventVerStaticContent",
+   "DisplayAppsDefaultEventVerUIServiceWeb"
+  ],
+  "columns": [
+   {
+    "columnName": "PartitionKey",
+    "dataType": "nvarchar"
+   },
+   {
+    "columnName": "RowKey",
+    "dataType": "nvarchar"
+   },
+   {
+    "columnName": "Timestamp",
+    "dataType": "nvarchar"
+   },
+   {
+    "columnName": "PreciseTimeStamp",
+    "dataType": "nvarchar"
+   },
+   {
+    "columnName": "Tenant",
+    "dataType": "nvarchar"
+   },
+   {
+    "columnName": "RoleInstance",
+    "dataType": "nvarchar"
+   },
+   {
+    "columnName": "Level",
+    "dataType": "int"
+   },
+   {
+    "columnName": "ProvidedGuid",
+    "dataType": "nvarchar"
+   },
+   {
+    "columnName": "EventId",
+    "dataType": "int"
+   },
+   {
+    "columnName": "Pid",
+    "dataType": "int"
+   },
+   {
+    "columnName": "Tid",
+    "dataType": "int"
+   },
+   {
+    "columnName": "ActivityId",
+    "dataType": "nvarchar"
+   },
+   {
+    "columnName": "RelatedActivityId",
+    "dataType": "nvarchar"
+   },
+   {
+    "columnName": "Message",
+    "dataType": "nvarchar"
+   },
+   {
+    "columnName": "RowIndex",
+    "dataType": "nvarchar"
+   }
+  ]
+ }
+}
