@@ -1,0 +1,17 @@
+<script>
+	queryBuilderModule.factory('schemaSvc', function(){
+		return {
+			tables: <%- tables %>,
+			schema: <%- schema %>,
+			operators: <%- operators%>,
+			connectors: [
+				{
+					"text" : "And"
+				},
+				{
+					"text" : "Or"
+				}
+			]
+		}
+	});
+</script>

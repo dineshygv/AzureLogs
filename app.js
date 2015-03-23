@@ -8,6 +8,11 @@ var buildSchema = require("./buildSchema");
 var sqlQueryBuilder = require("./sqlQueryBuilder");
 var tedious = require('./tdsQuery');
 
+//json
+var tables = require('./tables');
+var schema = require('./schema');
+var operators = require('./operators');
+
 var app = express();
 
 app.set('view engine', 'ejs');
@@ -23,6 +28,10 @@ function sendFile(path, res){
 		
 	});
 }
+
+app.get("/www/*", function(req, res){
+	sendFile(req.path, res);
+});
 
 function parseSqlQueryResult(result){
 	if(!result || !result.length){
@@ -56,13 +65,12 @@ function parseSqlQueryResult(result){
 	return rows;
 }
 
-app.get("/www/*", function(req, res){
-	sendFile(req.path, res);
-});
-
 app.get("/", function(req, res){
-	//sendFile("/www/views/home.html", res);
-	res.render(__dirname + '/www/views/home');
+	res.render(__dirname + '/www/views/home', {
+		tables: JSON.stringify(tables),
+		schema: JSON.stringify(schema),
+		operators: JSON.stringify(operators)
+	});
 });
 
 app.use(bodyParser.json());

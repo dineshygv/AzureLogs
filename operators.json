@@ -1,0 +1,44 @@
+[
+	{
+		"name" : "nvarchar",
+		"operators": [
+			{
+				"text" : "contains",
+				"expression" : "LIKE '%{0}%'"
+			},
+			{
+				"text" : "does not contain",
+				"expression" : "NOT LIKE '%{0}%'"
+			},
+			{
+				"text" : "equals",
+				"expression" : "= '{0}'"
+			},
+			{
+				"text" : "not equals",
+				"expression" : "<> '%{0}%'"
+			}
+		]
+	},
+	{
+		"name" : "int",
+		"operators": [			
+			{
+				"text" : "equals",
+				"expression" : "= {0}"
+			},
+			{
+				"text" : "not equals",
+				"expression" : "<> {0}"
+			},
+			{
+				"text" : "greater than",
+				"expression" : "> {0}"
+			},			
+			{
+				"text" : "less than",
+				"expression" : "< {0}"
+			}
+		]
+	}
+]

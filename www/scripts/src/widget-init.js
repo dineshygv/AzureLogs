@@ -1,15 +1,1 @@
-$(function() {
-    $('#stateTimePicker').datetimepicker({
-    	
-    });
-    
-    $('#endTimePicker').datetimepicker({
-    	
-    });
-    
-    
-    $('#roleMultiSelect').multiselect({
-    	includeSelectAllOption: true
-    });
-    
-});
+var queryBuilderModule = angular.module("queryBuilder",[]);

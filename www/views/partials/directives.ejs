@@ -1,0 +1,60 @@
+<script id="dropdown-template" type="text/x-custom-template">
+	<div class="dropdown">
+		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+		{{options[selected].text}}
+			<span class="caret"/>
+		</button>
+		<ul class="dropdown-menu">
+			<li ng-repeat="option in options" data-value="{{$index}}">
+				<a>{{option.text}}</a>
+			</li>
+		</ul>
+	</div>
+</script>
+
+<script id="datepicker-template" type="text/x-custom-template">
+	<div class='input-group date'>
+		<input type='text' class="form-control" /> 
+		<span class="input-group-addon">
+			<span class="glyphicon glyphicon-calendar"></span> 
+		</span>
+	</div>
+</script>
+
+<script id="multiselect-template" type="text/x-custom-template">
+	<select multiple="multiple">
+		<option ng-repeat="option in options" data-value="{{$index}}" ng-selected="{{option.selected}}">{{option.text}}</option>
+	</select>
+</script>
+
+<script id="querymaker-template" type="text/x-custom-template">
+	<table class="u-criteria-table">
+		<tbody>
+			<tr ng-repeat="item in data">
+				<td class="u-connector">							
+					<dropdown ng-if="$index != 0" options="connectors" selected="item.Connector"></dropdown>
+				</td>
+				<td class="u-query-field">
+					<dropdown options="schema" selected="item.Field"></dropdown>
+				</td>
+				<td class="u-operator">
+					<dropdown options="operatorset[schema[item.Field].type].operators" selected="item.Operator"></dropdown>
+				</td>
+				<td class="u-query-value">
+					<div class="input-group">
+						<input type="text" class="form-control" ng-model="item.Value" placeholder="value">
+					</div>
+				</td>
+				<td class="u-remove-criteria"><span
+					class="glyphicon glyphicon-remove" aria-hidden="true" ng-click="onRemove($index)"></span></td>
+			</tr>				
+			<tr>
+				<td class="u-connector">
+					<div class="btn-group">
+						<button type="button" class="new-query btn btn-primary dropdown-toggle">+ Add</button>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</script>

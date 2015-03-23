@@ -1,10 +1,12 @@
 <html>
 	<head>
+		<% include partials/directives %>
 		<% include partials/styles %>
 		<% include partials/scripts %>
+		<% include partials/schema %>
 	</head>
-	<body>
-		<div class="container" ng-app="queryBuilder">
+	<body ng-app="queryBuilder">
+		<div class="container" ng-controller = "buildQueryCtrl">
 			<% include partials/jumbotron %>
 			
 			<div class="u-critera">
@@ -15,14 +17,7 @@
 	
 			<div class="u-critera">
 				<div class="u-label u-header">Query</div>
-				<% include partials/criteria/build-query %>
-				
-				<div style="width:100px" ng-controller="dropdowntest">
-					<dropdown
-						options = "fruits"
-						selected = "king">
-					</dropdown>
-				</div>				
+				<% include partials/criteria/build-query %>							
 			</div>						
 		</div>
 	</body>
