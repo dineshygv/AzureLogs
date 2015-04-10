@@ -98,4 +98,6 @@ app.get("/rebuildschema", function(req, res){
 	});
 });
 
-app.listen(3000);
+var portNo = 3000;
+app.listen(portNo);
+console.log("server started on port " + portNo);
